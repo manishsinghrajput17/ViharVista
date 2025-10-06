@@ -1,0 +1,46 @@
+/* src/App.css */
+
+body {
+  margin: 0;
+  padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    color: #333;
+  
+    /* Warm white base with a gentle gradient */
+    background: linear-gradient(
+      135deg,
+      #fdfaf6 0%,   /* warm white */
+      #f8f4ef 50%,  /* slightly deeper warm white */
+      #fdfaf6 100%
+    );
+  
+    /* Optional: subtle noise texture for depth */
+    background-image:
+      linear-gradient(
+        135deg,
+        #fdfaf6 0%,
+        #f8f4ef 50%,
+        #fdfaf6 100%
+      ),
+      radial-gradient(circle, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+    background-size: cover, 40px 40px;
+  }
+
+
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex-grow: 1;
+  padding-top: 70px; /* To account for fixed navbar height */
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}

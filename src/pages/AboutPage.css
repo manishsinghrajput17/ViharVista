@@ -1,0 +1,254 @@
+.about-page {
+  min-height: 100vh;
+  background: linear-gradient(to bottom right, #f9fafb, #eef2ff);
+}
+
+/* Hero */
+.about-page .about-hero {
+  position: relative;
+  text-align: center;
+  color: white;
+  padding: 6rem 1rem;
+  background: linear-gradient(135deg, #4f46e5, #7c3aed, #2563eb);
+}
+.about-page .about-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.2);
+}
+.about-page .about-hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 700px;
+  margin: 0 auto;
+}
+.about-page .about-hero-icon {
+  width: 90px;
+  height: 90px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+}
+.about-page .about-title {
+  font-size: 3.5rem;
+  font-weight: 750;
+  background: linear-gradient(to right, #facc15, #f97316);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+
+}
+.about-page .about-subtitle {
+  margin-top: 2rem;
+  font-size: 1.4rem;
+  margin-top: 0.5rem;
+}
+
+/* Stats */
+.about-page .stats-section {
+  padding: 4rem 1rem;
+  background: #fff;
+}
+.about-page .stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.about-page .stat-card {
+  text-align: center;
+  padding: 2rem;
+  border-radius: 1rem;
+  background: linear-gradient(to bottom right, #f9fafb, #eef2ff);
+  border: 1px solid #e5e7eb;
+}
+.about-page .stat-icon {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 1rem;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #7c3aed, #2563eb);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+.about-page .stat-number {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1f2937;
+}
+.about-page .stat-label {
+  color: #6b7280;
+}
+
+/* Mission */
+.about-page .mission-section {
+  padding: 4rem 1rem;
+  background: linear-gradient(to bottom right, #eef2ff, #f9fafb);
+  text-align: center;
+}
+.about-page .mission-section h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  margin-top: -2rem;
+
+}
+.about-page .mission-box {
+  max-width: 800px;
+  margin: 0 auto;
+  background: linear-gradient(135deg, #5c55dd, #5182eb);
+  padding: 3rem;
+  font-size: 1.25rem;
+  line-height: 1.8;
+  color: white;
+  border-radius: 1.2rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+/* Features (What We Offer) */
+.about-page .features-section {
+  padding: 5rem 1rem;
+  background: #fff;
+  text-align: center;
+}
+.about-page .features-section h2 {
+  font-size: 3.2rem;
+  font-weight: 750;
+  margin-bottom: 2.5rem;
+  margin-top: -3rem;
+
+}
+.about-page .features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.about-page .feature-card {
+  padding: 2.5rem;
+  font-size: 1.1rem;
+  border-radius: 1.2rem;
+  border: 1px solid #e5e7eb;
+  background: #fff;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+.about-page .feature-card:hover {
+  transform: translateY(-8px);
+}
+.about-page .feature-icon {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin: 0 auto 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+.about-page .feature-icon.blue { background: linear-gradient(135deg, #2563eb, #38bdf8); }
+.about-page .feature-icon.green { background: linear-gradient(135deg, #16a34a, #34d399); }
+.about-page .feature-icon.red { background: linear-gradient(135deg, #ef4444, #f472b6); }
+.about-page .feature-icon.purple { background: linear-gradient(135deg, #7c3aed, #6366f1); }
+.about-page .feature-icon.orange { background: linear-gradient(135deg, #f97316, #ef4444); }
+.about-page .feature-icon.teal { background: linear-gradient(135deg, #14b8a6, #3b82f6); }
+
+/* Tech Stack */
+.about-page .tech-section {
+  padding: 5rem 1rem;
+  background: linear-gradient(to bottom right, #f9fafb, #eef2ff);
+  text-align: center;
+}
+.about-page .tech-section h2 {
+  font-size: 3.3rem;
+  font-weight: 750;
+  margin-top: -3rem;
+  margin-bottom: 2.5rem;
+}
+.about-page .tech-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.about-page .tech-card {
+  padding: 2.5rem;
+  font-size: 1.05rem;
+  border-radius: 1.2rem;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+.about-page .tech-card:hover {
+  transform: scale(1.05);
+}
+.about-page .tech-icon {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Contact */
+.about-page .contact-section {
+  padding: 4rem 1rem;
+  background: #fff;
+  text-align: center;
+}
+.about-page .contact-section h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-top: -2rem;
+  margin-bottom: 1.5rem;
+}
+.about-page .contact-section p {
+  max-width: 600px;
+  margin: 0 auto 2rem;
+  font-size: 1.4rem;
+  color: #4b5563;
+}
+.about-page .contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin: 2rem auto;
+  max-width: 800px;
+}
+.about-page .contact-card {
+  padding: 2rem;
+  border-radius: 1rem;
+  background: linear-gradient(to bottom right, #f9fafb, #eef2ff);
+  border: 1px solid #e5e7eb;
+}
+.about-page .contact-card h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+.about-page .contact-card a {
+  color: #2563eb;
+  font-weight: 600;
+  text-decoration: none;
+}
+.about-page .contact-btn {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  background: linear-gradient(135deg, #f97316, #ef4444);
+  color: white;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.about-page .contact-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(249, 115, 22, 0.4);
+}
