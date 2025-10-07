@@ -66,7 +66,7 @@ const SignUpPage = () => {
       {/* Left section */}
       <div className="auth-left">
         <div className="auth-box">
-          <h2 className="auth-title">Join TravelExplorer</h2>
+          <h2 className="auth-title">Join ViharVista</h2>
           <p className="auth-subtitle">Create your account and start discovering destinations</p>
 
           <form onSubmit={handleSubmit(onSubmit)} className="auth-form">
@@ -128,9 +128,9 @@ const SignUpPage = () => {
           ))}
         </div>
         {/* Join Travelers Card */}
-        <div className="join-travelers-card">       <h4>Join 10,000+ Travelers</h4>
+        <div className="join-travelers-card">       <h4>Join 5,000+ Travelers</h4>
           <p>
-            Discover amazing destinations, create wishlists, and connect with travelers worldwide.
+            Discover amazing destinations, create wishlists, and connect with the diversity of the Bihar.
           </p>
           <div className="social-icons">
             <button className="social-btn fb">f</button>

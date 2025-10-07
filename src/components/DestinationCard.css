@@ -157,13 +157,16 @@
 
 /* Hours & Price Row */
 .details-grid {
+  height: 3rem;
   display: flex;
   justify-content: flex-start;
-  gap: 6rem;
+  gap: 3rem;
   margin-top: 1rem;
   border-top: 2px solid #eee;
   padding-top: 1rem;
   margin-bottom: 1.2rem;
+  margin-left: 0.5rem;
+ 
 }
 
 .detail-item {
@@ -252,6 +255,7 @@
   color: #4e4a4a;
   transition: background 0.3s ease;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .external-btn:hover {

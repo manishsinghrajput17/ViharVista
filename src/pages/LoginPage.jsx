@@ -58,7 +58,7 @@ const LoginPage = () => {
       <div className="auth-left">
         <div className="auth-box">
           <h2 className="auth-title">Welcome Back</h2>
-          <p className="auth-subtitle">Login to continue your journey with TravelExplorer</p>
+          <p className="auth-subtitle">Login to continue your journey with ViharVista</p>
 
           <form onSubmit={handleSubmit(onSubmit)} className="auth-form">
             {/* Email */}
