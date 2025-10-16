@@ -253,3 +253,35 @@
   transform: scale(1.05);
   opacity: 0.9;
 }
+ /* ---------- Role Toggle (Login) ---------- */
+/* Role toggle buttons above the form */
+.role-toggle {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 1rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  justify-content: center;
+}
+
+.role-toggle button {
+  flex: 1; /* equal width for both buttons */
+  padding: 0.8rem 0;
+  border-radius: 0.7rem;
+  border: 1px solid #d1d5db;
+  background: #f7f7f7;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.role-toggle button.active {
+  background: linear-gradient(135deg, #ff7d7d, #f7a815);
+  color: white;
+  border: none;
+}
+
+.role-toggle button:hover:not(.active) {
+  background: #e5e7eb;
+}

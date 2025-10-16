@@ -1,0 +1,224 @@
+/* src/admin/ManageCardDetails.module.css */
+
+.manageCard {
+  background: #fff;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  border: 1px solid #eee;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.manageCard:hover {
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.15);
+}
+
+/* Card Image */
+.cardImageContainer {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.cardImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.manageCard:hover .cardImage {
+  transform: scale(1.05);
+}
+
+.categoryTag {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: #fff;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+
+.ratingBadge {
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background: #fff;
+  padding: 4px 8px;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+
+/* Favorite Badge */
+.favoriteBadge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background: #ffe6e6;
+  color: #e63946;
+  padding: 4px 8px;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+
+.favoriteBadge svg {
+  stroke: #e63946; /* heart icon color */
+}
+
+/* Card Content */
+.cardContent {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  /* Added flex-grow so content pushes actions to the bottom */
+  flex-grow: 1; 
+}
+
+.cardTitle {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #222;
+}
+
+.location {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: 0.95rem;
+  color: #555;
+}
+.location-icon {
+  color: #e63946;
+  margin-right: 6px;
+}
+
+.description {
+  font-size: 0.95rem;
+  color: #444;
+  line-height: 1.4;
+  height: 3rem;
+  overflow: hidden;
+}
+
+/* Details Grid */
+.detailsGrid {
+  display: flex;
+  justify-content: flex-start;
+  gap: 2rem;
+  margin-top: 0.8rem;
+  border-top: 1px solid #eee;
+  padding-top: 0.8rem;
+}
+
+.detailItem {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.detailIcon {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.purple {
+  background: #f3e8ff;
+  color: #725dec;
+}
+
+.green {
+  background: #e6f9ed;
+  color: #268e53;
+}
+
+.detailInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.detailLabel {
+  font-size: 0.7rem;
+  color: #777;
+  text-transform: uppercase;
+}
+
+.detailText {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #222;
+}
+
+/* Action Buttons */
+.cardActions {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 0.8rem;
+}
+
+.viewBtn,
+.manageBtn {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.9rem;
+  height: 42px;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  border: none;
+}
+
+.viewBtn {
+  background: linear-gradient(90deg, #634fd4, #3c86db);
+  color: #fff;
+}
+
+.viewBtn:hover {
+  transform: translateY(-2px);
+}
+
+.manageBtn {
+  background: linear-gradient(135deg, #ff6b6b, #ffa500);
+  color: #fff;
+}
+
+.manageBtn:hover {
+  transform: translateY(-2px);
+}
+
+.red {
+  background: #ffe6e6;
+  color: #e63946;
+}
+
+.detailItem .red svg {
+  stroke: #e63946;
+}
+

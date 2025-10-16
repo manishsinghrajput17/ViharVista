@@ -19,12 +19,12 @@ const DestinationCard = ({ destination }) => {
     e.stopPropagation();
 
     if (!user) {
-      navigate("/signup");
+      navigate("/Favorites");
       return;
     }
 
     if (favorite) {
-      removeFavorite(destination.id);
+      removeFavorite(destination.user.id);
     } else {
       addFavorite(destination);
     }

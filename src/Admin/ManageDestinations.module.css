@@ -1,0 +1,154 @@
+.manageDestinationsPage {
+  padding: 2rem;
+}
+
+/* Page Header */
+.pageHeader {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.pageHeader h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, #4f46e5, #7c3aed, #2563eb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 0.5rem;
+}
+.pageHeader p {
+  font-size: 1.2rem;
+  color: #444;
+}
+
+/* Search + Add */
+.searchAddContainer {
+  display: flex;
+  justify-content: space-between;
+  max-width: 800px;
+  margin: 0 auto 2rem;
+  gap: 1rem;
+}
+.searchInputContainer {
+  flex: 1;
+  position: relative;
+}
+.searchIcon {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #6c757d;
+}
+.searchInputContainer input {
+  width: 100%;
+  padding: 12px 15px 12px 45px;
+  border-radius: 50px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  outline: none;
+}
+.addBtn {
+  background: linear-gradient(135deg, #ff6b6b, #ffa500);
+  border: none;
+  padding: 12px 30px;
+  border-radius: 50px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.addBtn:hover {
+  transform: scale(1.05);
+}
+
+/* Categories */
+.categories {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.categoryBtn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: white;
+  border: 2px solid #e5e7eb;
+  color: #6b7280;
+  padding: 10px 20px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.categoryBtn:hover,
+.categoryBtn.active {
+  background: linear-gradient(135deg, #4f46e5, #2563eb) !important;
+  color: white;
+  border-color: transparent;
+}
+
+.categoryEmoji {
+  font-size: 1.2rem;
+}
+
+
+/* Results header */
+
+.resultsHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding: 0 1rem;
+  width: 100%;
+}
+.resultsTitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.sortSelect {
+  padding: 6px 12px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  cursor: pointer;
+  margin-left: auto;
+  width: 300px;
+}
+
+/* Results count */
+.resultsCount {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #6b7280;
+  font-size: 1rem;
+}
+
+/* Grid */
+.destinationsGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+@media (max-width: 1024px) {
+  .destinationsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 640px) {
+  .destinationsGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* No results */
+.noResults {
+  text-align: center;
+  margin: 3rem 0;
+  font-size: 1.2rem;
+  color: #e52e2e;
+}

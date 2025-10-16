@@ -1,5 +1,4 @@
-General Reset & Typography 
-.homepage {
+General Reset & Typography .homepage {
   min-height: 100vh;
   background: linear-gradient(to bottom right, #f8fafc, #f0f9ff, #f3e8ff);
 }
@@ -14,18 +13,23 @@ General Reset & Typography
   margin-bottom: 50px;
 
   /* FIXED: pull hero up so it starts right under navbar */
-  margin-top: -70px; /* same as navbar height */
-  padding-top: calc(6rem + 70px); 
+  margin-top: -70px;
+  /* same as navbar height */
+  padding-top: calc(6rem + 70px);
 }
 
 
 .hero-title {
-  font-size: 5rem;       /* bigger & bolder */
-  font-weight: 700;        /* max bold */
-  line-height: 1.1;        /* tighten gap between lines */
+  font-size: 5rem;
+  /* bigger & bolder */
+  font-weight: 700;
+  /* max bold */
+  line-height: 1.1;
+  /* tighten gap between lines */
   color: #fff;
   margin-top: auto;
-  margin-bottom: 1rem;     /* reduced spacing */
+  margin-bottom: 1rem;
+  /* reduced spacing */
 
 }
 
@@ -75,6 +79,7 @@ General Reset & Typography
   background: linear-gradient(to right, #facc15, #fb923c);
   color: white;
 }
+
 /* Stats Grid */
 .stats-grid {
   display: grid;
@@ -95,16 +100,21 @@ General Reset & Typography
 
   display: flex;
   flex-direction: column;
-  align-items: center;     /* horizontal center */
-  justify-content: center; /* vertical center */
-  height: 140px;           /* fixed box height */
+  align-items: center;
+  /* horizontal center */
+  justify-content: center;
+  /* vertical center */
+  height: 140px;
+  /* fixed box height */
 }
 
 .stat-box h3 {
   font-size: 2rem;
   font-weight: 700;
-  margin: 0 0 0.3rem 0; /* tight spacing */
-  color: #fbcb0e;       /* yellow highlight */
+  margin: 0 0 0.3rem 0;
+  /* tight spacing */
+  color: #fbcb0e;
+  /* yellow highlight */
   line-height: 1.2;
 }
 
@@ -148,7 +158,7 @@ General Reset & Typography
   background: white;
   border-radius: 50px;
   padding: 8px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
 .search-input-container {
@@ -189,8 +199,8 @@ General Reset & Typography
 
 .search-btn:hover {
   transform: scale(1.05);
-  box-shadow: 0 5px 15px rgba(255,107,107,0.4);
-   background: linear-gradient(135deg, #4f46e5, #2563eb);
+  box-shadow: 0 5px 15px rgba(255, 107, 107, 0.4);
+  background: linear-gradient(135deg, #4f46e5, #2563eb);
 }
 
 /* Search Results */
@@ -227,6 +237,7 @@ General Reset & Typography
   gap: 0.4rem;
   margin-top: 0.2rem;
 }
+
 .result-location svg {
   width: 14px;
   height: 14px;
@@ -238,7 +249,7 @@ General Reset & Typography
 /* Categories Section */
 .categories-section {
   padding: 50px 20px;
-  
+
   background: linear-gradient(135deg, #ff7d7d, #f7a815);
 }
 
@@ -260,7 +271,8 @@ General Reset & Typography
   display: flex;
   align-items: center;
   gap: 10px;
-  background: #ffffff; /* default background */
+  background: #ffffff;
+  /* default background */
   border: 2px solid #e9ecef;
   color: #6c757d;
   padding: 15px 25px;
@@ -274,8 +286,10 @@ General Reset & Typography
 /* Hover effect */
 .category-btn:hover {
   border-color: #ead266;
-  background: linear-gradient(135deg, #4f46e5, #2563eb); /* gradient */
-  color: #ffffff; /* ensures text is visible */
+  background: linear-gradient(135deg, #4f46e5, #2563eb);
+  /* gradient */
+  color: #ffffff;
+  /* ensures text is visible */
   transform: translateY(-2px);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
@@ -295,7 +309,7 @@ General Reset & Typography
 
 /* Popular Destinations Section */
 .destinations-section {
-  padding: 60px 20px;
+padding: 3rem 0rem;
   background: linear-gradient(to bottom right, #f9fafb, #eef2ff);
 }
 
@@ -307,13 +321,15 @@ General Reset & Typography
 .section-header h2 {
   font-size: 2.9rem;
   font-weight: 700;
-  color: #1f2937; /* gray-800 */
+  color: #1f2937;
+  /* gray-800 */
   margin-bottom: 0.8rem;
 }
 
 .section-header p {
   font-size: 1.5rem;
-  color: #6b7280; /* gray-600 */
+  color: #6b7280;
+  /* gray-600 */
 }
 
 /* Results Info */
@@ -325,21 +341,31 @@ General Reset & Typography
 }
 
 /* Popular Destinations Grid */
+/* Popular Destinations Grid (Home Page) */
 .destinations-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;   /* ✅ center the whole row */
-  gap: 2rem;                 /* ✅ spacing between cards */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
   margin: 0 auto 3rem;
-  max-width: 1200px;         /* ✅ match navbar/container width */
-  padding: 0 1rem;
+  /* max-width: none;
+  padding: 0 1rem; */
+
+ 
+}
+/* Responsive Breakpoints (Crucial for the Grid to adapt) */
+
+@media (max-width: 1024px) {
+  .destinations-grid {
+    grid-template-columns: repeat(2, 1fr);
+    /* Tablet: 2 columns */
+  }
 }
 
-/* Each card */
-.destinations-grid > * {
-  flex: 0 0 auto;    /* don’t stretch or shrink */
-  width: 320px;      /* ✅ consistent natural card width */
-  max-width: 100%;   /* safety for mobile */
+@media (max-width: 640px) {
+  .destinations-grid {
+    grid-template-columns: 1fr;
+    /* Mobile: 1 column */
+  }
 }
 
 /* Tablet: 2 per row */
@@ -452,7 +478,8 @@ General Reset & Typography
 .why-choose-section .section-header h2 {
   font-size: 3rem;
   margin-bottom: 20px;
-  color: #1f2937; /* gray-800 */
+  color: #1f2937;
+  /* gray-800 */
   font-weight: 700;
 }
 
@@ -465,7 +492,8 @@ General Reset & Typography
 
 .why-choose-section .section-header p {
   font-size: 1.2rem;
-  color: #6b7280; /* gray-600 */
+  color: #6b7280;
+  /* gray-600 */
   max-width: 600px;
   margin: 0 auto;
   line-height: 1.6;
@@ -486,17 +514,20 @@ General Reset & Typography
   text-align: center;
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
   transition: all 0.3s ease;
-  border: 1px solid #e5e7eb; /* gray-200 */
+  border: 1px solid #e5e7eb;
+  /* gray-200 */
   position: relative;
   overflow: hidden;
-  min-height: 280px; /* ensure consistent height */
+  min-height: 280px;
+  /* ensure consistent height */
 
 }
 
 .why-choose-section .feature-card:hover {
   transform: translateY(-8px);
   box-shadow: 0 12px 24px rgba(102, 126, 234, 0.2);
-  border-color: #c7d2fe; /* light indigo */
+  border-color: #c7d2fe;
+  /* light indigo */
 }
 
 /* Hover shimmer */
@@ -507,12 +538,10 @@ General Reset & Typography
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(
-    90deg,
-    transparent,
-    rgba(102, 126, 234, 0.08),
-    transparent
-  );
+  background: linear-gradient(90deg,
+      transparent,
+      rgba(102, 126, 234, 0.08),
+      transparent);
   transition: all 0.6s ease;
 }
 
@@ -534,13 +563,15 @@ General Reset & Typography
 .why-choose-section .feature-card h3 {
   font-size: 1.5rem;
   margin-bottom: 1rem;
-  color: #1f2937; /* gray-800 */
+  color: #1f2937;
+  /* gray-800 */
   font-weight: 650;
 }
 
 /* Paragraph */
 .why-choose-section .feature-card p {
-  color: #4b5563; /* gray-700 */
+  color: #4b5563;
+  /* gray-700 */
   line-height: 1.4;
   font-size: 1.1rem;
 }
@@ -550,11 +581,12 @@ General Reset & Typography
 .cta-section {
   background: linear-gradient(135deg, #4f46e5, #7c3aed, #2563eb);
   color: white;
-  padding: 3rem 1.5rem; /* reduced height */
+  padding: 3rem 1.5rem;
+  /* reduced height */
   text-align: center;
   position: relative;
   overflow: hidden;
-  
+
 }
 
 /* Decorative background elements */
@@ -636,7 +668,8 @@ General Reset & Typography
 }
 
 .cta-btn.primary:hover {
-  background: linear-gradient(to right, #f97316, #dc2626); /* slightly darker on hover */
+  background: linear-gradient(to right, #f97316, #dc2626);
+  /* slightly darker on hover */
   transform: translateY(-3px);
   box-shadow: 0 8px 18px rgba(239, 68, 68, 0.35);
 }
@@ -653,26 +686,32 @@ General Reset & Typography
   transform: translateY(-3px);
   box-shadow: 0 8px 18px rgba(255, 255, 255, 0.25);
 }
+
 /* Responsive Adjustments */
 @media (max-width: 768px) {
   .hero {
     padding: 5rem 1rem;
-    margin-top: -60px; /* adjust for smaller navbar */
+    margin-top: -60px;
+    /* adjust for smaller navbar */
     padding-top: calc(5rem + 60px);
   }
+
   .hero-title {
     font-size: 3.5rem;
   }
+
   .hero-subtitle {
     font-size: 1.2rem;
     margin-bottom: 2.5rem;
   }
+
   .hero-buttons {
     flex-direction: column;
     gap: 0.8rem;
   }
+
   .btn {
     font-size: 1.1rem;
     padding: 0.8rem 1.5rem;
   }
-} 
+}
