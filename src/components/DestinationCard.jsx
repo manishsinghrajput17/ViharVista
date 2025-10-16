@@ -24,7 +24,7 @@ const DestinationCard = ({ destination }) => {
     }
 
     if (favorite) {
-      removeFavorite(destination.user.id);
+      removeFavorite(destination.id);
     } else {
       addFavorite(destination);
     }
