@@ -174,4 +174,7 @@
   font-size: 2rem;
   color:rgb(228, 2, 2); /* gray-600 */
 }
- 
+ .favorite-icon:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}

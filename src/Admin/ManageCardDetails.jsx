@@ -59,7 +59,7 @@ const ManageCardDetails = ({ destination }) => {
         />
         <div className={styles.categoryTag}>{destination.category}</div>
         <div className={styles.ratingBadge}>
-          <Star size={14} />
+          <Star size={14} className="star-icon"/>
           <span>{destination.rating}</span>
         </div>
 
@@ -75,7 +75,7 @@ const ManageCardDetails = ({ destination }) => {
       <div className={styles.cardContent}>
         <h3 className={styles.cardTitle}>{destination.name}</h3>
         <div className={styles.location}>
-          <MapPin size={14} className="location-icon"/>
+          <MapPin size={17} className="location-icon"/>
           <span>{destination.location}</span>
         </div>
         <p className={styles.description}>
@@ -88,7 +88,7 @@ const ManageCardDetails = ({ destination }) => {
         <div className={styles.detailsGrid}>
           <div className={styles.detailItem}>
             <div className={`${styles.detailIcon} ${styles.purple}`}>
-              <Clock size={16} />
+              <Clock size={17} />
             </div>
             <div className={styles.detailInfo}>
               <span className={styles.detailLabel}>Hours</span>
@@ -100,7 +100,7 @@ const ManageCardDetails = ({ destination }) => {
 
           <div className={styles.detailItem}>
             <div className={`${styles.detailIcon} ${styles.green}`}>
-              <Ticket size={16} />
+              <Ticket size={17} />
             </div>
             <div className={styles.detailInfo}>
               <span className={styles.detailLabel}>Price</span>

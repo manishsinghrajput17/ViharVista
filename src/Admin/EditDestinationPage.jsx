@@ -48,7 +48,13 @@ const EditDestinationPage = () => {
   }, [id, setValue]);
 
   const onSubmit = async (formData) => {
-    const updatedData = { ...formData, images: formData.images.split(",").map((url) => url.trim()) };
+    const updatedData = {
+      ...formData, 
+      latitude: parseFloat(formData.latitude),
+      longitude: parseFloat(formData.longitude),
+      rating: parseFloat(formData.rating), 
+      images: formData.images.split(",").map((url) => url.trim())
+    };
 
     Swal.fire({
       title: "Updating Destination...",

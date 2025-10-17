@@ -50,12 +50,25 @@ const DestinationCard = ({ destination }) => {
         <div className="category-tag">{destination.category}</div>
 
         {/* Favorite */}
-        <button onClick={handleFavoriteClick} className="favorite-btn">
+        {/* <button onClick={handleFavoriteClick} className="favorite-btn">
           <Heart
             size={20}
             className={favorite ? "heart-icon active" : "heart-icon"}
           />
-        </button>
+        </button> */}
+        <button
+      onClick={handleFavoriteClick}
+      disabled={user?.role === "admin"}
+      className="favorite-btn"
+      title={user?.role === "admin" ? "Admins cannot favorite" : "Toggle favorite"}
+      style={{ cursor: user?.role === "admin" ? "not-allowed" : "pointer" }}
+    >
+      <Heart
+        size={20}
+        className={`heart-icon ${favorite ? "active" : ""}`}
+        color={user?.role === "admin" ? "gray" : favorite ? "red" : "black"}
+      />
+    </button>
 
         {/* Rating */}
         <div className="rating-badge">
@@ -81,28 +94,28 @@ const DestinationCard = ({ destination }) => {
 
         {/* Hours & Price */}
         <div className="details-grid">
-  {/* Hours */}
-  <div className="detail-item">
-    <div className="detail-icon purple">
-      <Clock size={16} />
-    </div>
-    <div className="detail-info">
-      <span className="detail-label">Hours</span>
-      <span className="detail-text">{destination.timings.split(" ")[0]}</span>
-    </div>
-  </div>
+          {/* Hours */}
+          <div className="detail-item">
+            <div className="detail-icon purple">
+              <Clock size={16} />
+            </div>
+            <div className="detail-info">
+              <span className="detail-label">Hours</span>
+              <span className="detail-text">{destination.timings.split(" ")[0]}</span>
+            </div>
+          </div>
 
-  {/* Price */}
-  <div className="detail-item">
-    <div className="detail-icon green">
-      <Ticket size={16} />
-    </div>
-    <div className="detail-info">
-      <span className="detail-label">Price</span>
-      <span className="detail-text">{destination.entry_fee}</span>
-    </div>
-  </div>
-</div>
+          {/* Price */}
+          <div className="detail-item">
+            <div className="detail-icon green">
+              <Ticket size={16} />
+            </div>
+            <div className="detail-info">
+              <span className="detail-label">Price</span>
+              <span className="detail-text">{destination.entry_fee}</span>
+            </div>
+          </div>
+        </div>
 
 
         {/* Footer */}
